@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "messages": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "success"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "customerId": {
+          "type": "string"
+        },
+        "cost_centre_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "is_private": {
+          "type": "string"
+        },
+        "is_deleted": {
+          "type": "string"
+        },
+        "project_admin_employee_numbers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "project_id",
+        "name",
+        "description",
+        "customerId",
+        "cost_centre_id",
+        "status",
+        "is_private",
+        "is_deleted",
+        "project_admin_employee_numbers"
+      ]
+    }
+  },
+  "required": [
+    "success",
+    "messages",
+    "data"
+  ]
+}
